@@ -35,5 +35,10 @@ export const useStyle = makeStyles({
         color:'#fff',
         padding:5,
     },
-
+    btnLogout:{
+        position:"absolute",
+        top:0,
+        right:0,
+        margin:30,
+    }
 });
