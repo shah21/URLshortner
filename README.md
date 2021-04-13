@@ -6,7 +6,7 @@
 ![node][npm-image]
 ![mongodb][mongo-url]
 
-One to two paragraph statement about your product and what it does.
+URLshortner is a URL shortening web app, which provides short aliases for redirection of long URLs.So we can short a long url with random values and which can use to redirect to original url.
 
 ![](header.png)
 
