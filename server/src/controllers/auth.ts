@@ -1,3 +1,5 @@
+/* Auth controller or middleware funcs */
+
 import {Request,Response,NextFunction} from "express";
 import { validationResult } from "express-validator";
 import bcryptjs from "bcryptjs";
@@ -7,7 +9,7 @@ import { generateAccessToken,generateRefreshToken, verifyRefreshToken,verifyAcce
 
 import User from "../models/user";
 
-
+/* GET SPECIFIED USER / CURRENT USER */
 export const getUser = async (req:Request,res:Response,next:NextFunction)=>{
     const userId:string = req.userId!;
 
@@ -34,7 +36,7 @@ export const getUser = async (req:Request,res:Response,next:NextFunction)=>{
     }
 };
 
-
+/* LOGIN USER */
 export const postLogin = async (req:Request,res:Response,next:NextFunction)=>{
     const email = req.body.email;
     const password = req.body.password;
@@ -71,6 +73,7 @@ export const postLogin = async (req:Request,res:Response,next:NextFunction)=>{
 
 }
 
+/* CREATE NEW USER */
 export const postSignup = async (req:Request,res:Response,next:NextFunction)=>{
 
     
@@ -101,7 +104,7 @@ export const postSignup = async (req:Request,res:Response,next:NextFunction)=>{
     }
 
 }
-
+/* GET NEW REFRESH TOKEN */
 export const postRefreshToken = async (req:Request,res:Response,next:NextFunction)=>{
     try{
         const { refreshToken } = req.body;
@@ -124,7 +127,7 @@ export const postRefreshToken = async (req:Request,res:Response,next:NextFunctio
     }
 };
 
-
+/* VERIFY ACCESS TOKEN */
 export const postVerifyToken = async (req:Request,res:Response,next:NextFunction)=>{
     try{
         const { accessToken } = req.body;
@@ -147,14 +150,7 @@ export const postVerifyToken = async (req:Request,res:Response,next:NextFunction
     }
 };
 
-
-
-interface MyToken {
-    userId: string;
-    email: string;
-    // whatever else is in the JWT.
-  }
-
+/* LOGOUT  */
 export const postLogout = async (req:Request,res:Response,next:NextFunction) => {
     const {refreshToken,accessToken} = req.body;
     

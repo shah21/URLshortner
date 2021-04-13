@@ -1,3 +1,5 @@
+/* Auth routes and middlewares */
+
 import { Router } from "express";
 import { body } from "express-validator";
 import isAuth from "../middlewares/is-auth"

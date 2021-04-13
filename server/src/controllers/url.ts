@@ -65,7 +65,7 @@ export const postAddUrl = async (req:Request,res:Response,next:NextFunction)=>{
     }
 }
 
-
+/* Delete shrinked url */
 export const deleteUrl = async (req:Request,res:Response,next:NextFunction)=>{
     const id = req.params.id;
 

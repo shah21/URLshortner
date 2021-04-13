@@ -1,3 +1,5 @@
+/* Public router (Anyone can use it) */
+
 import { Router } from "express";
 
 
