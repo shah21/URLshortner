@@ -14,19 +14,44 @@ URLshortner is a URL shortening web app, which provides short aliases for redire
 
 ## Installation
 
-OS X & Linux:
 
-```sh
-npm install my-crazy-module --save
-```
+<h4> Server </h4>
 
-Windows:
+1. Configure mongoDb database 📖 [Connect with mongoDb atlas][mongo-conn]
+2. Clone the repo
 
-```sh
-edit autoexec.bat
-```
+   ```sh
+   git clone https://github.com/shah21/ProfileSite.git
+   ```
+3. Install NPM packages
 
-## Usage example
+   ```sh
+   npm install
+   ```
+4. Enter your API keys and Database credentials in .env 
+   🗒️ You can find example .env file from repo
+   
+   ```JS
+    MONGO_USER = USER_NAME
+    MONGI_PASSWORD = ....
+    etc...
+   ```
+<h4> Client (Web) </h4> 
+
+1. Install NPM packages
+
+   ```sh
+   npm install
+   ```
+2. Change host ( server address ) on axios/config.ts ( if you want to run project locally )
+
+   ```sh
+   const host = '<address>';
+   const BASE_URL = `http://${host}`;
+   ```   
+
+
+## Features
 
 A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
 
@@ -43,26 +68,16 @@ npm test
 
 ## Release History
 
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
 * 0.0.1
-    * Work in progress
+    * Initial Version
 
 ## Meta
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+Muhsin Shah - [@shah21](https://twitter.com/MuhsinS07857838?s=09) - muhsinshah21@gmail.com
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
+Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+[https://github.com/shah21/Data-Bucket.git](https://github.com/shah21/Data-Bucket.git/i)
 
 ## Contributing
 
