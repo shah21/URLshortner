@@ -1,5 +1,5 @@
 # URLshortner
-> Simple Url shrinker like tiny url
+> Url shrinker like tiny url
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
