@@ -10,7 +10,7 @@ URLshortner is a URL shortening web app, which provides short aliases for redire
 
 [View Demo](https://main.dqvr4svwjlmek.amplifyapp.com) 💻
 
-![](header.png)
+![](./screenshots/header.png)
 
 ## Installation
 
