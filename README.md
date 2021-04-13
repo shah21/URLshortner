@@ -1,9 +1,10 @@
 # URLshortner
 > Url shrinker like tiny url
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+![react][react-url]
+![typescript][types-url]
+![node][npm-image]
+![mongodb][mongo-url]
 
 One to two paragraph statement about your product and what it does.
 
@@ -70,9 +71,10 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 5. Create a new Pull Request
 
 <!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[node-js]: https://img.shields.io/badge/node-javascript-green
+[npm-image]: https://img.shields.io/badge/node-v12.18.3-green
+[mongo-url]: https://img.shields.io/badge/mongodb-v4.4-brightgreen
+[react-url]: https://img.shields.io/badge/reactJs-%20v17.0.1-blue
+[types-url]: https://img.shields.io/badge/typescript-4.1.5-%236E97CC
+[mongo-conn]: https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb--how-to-get-connected-to-your-database
 [wiki]: https://github.com/yourname/yourproject/wiki
