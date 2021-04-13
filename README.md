@@ -8,6 +8,8 @@
 
 URLshortner is a URL shortening web app, which provides short aliases for redirection of long URLs.So we can short a long url with random values and which can use to redirect to original url.
 
+[View Demo](https://main.dqvr4svwjlmek.amplifyapp.com)
+
 ![](header.png)
 
 ## Installation
