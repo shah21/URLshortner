@@ -1,3 +1,4 @@
+/* User Model */
 
 class User{
     email:string;

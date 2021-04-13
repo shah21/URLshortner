@@ -1,3 +1,5 @@
+/* Custom table for showing recent urls */
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import MaterialTable from '@material-ui/core/Table';
@@ -31,9 +33,6 @@ interface TypeProps{
 
 
 function CustomTable({urls,handleDelete}:TypeProps) {
-
-
-
 
     const classes = useStyles();
 

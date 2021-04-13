@@ -12,7 +12,7 @@ import isAuth from "../../utils/isAuth";
 import { useStyle } from "./styles";
 
 
-
+/* Add new shrinked url */
 const addUrl = async (userToken:UserToken,body:object) => {
     try {
         const isAuthourized = await isAuth(userToken.accessToken,userToken.refreshToken);
@@ -32,7 +32,7 @@ const addUrl = async (userToken:UserToken,body:object) => {
     }
 }
 
-
+/* Get all url shrinked by user */
 const getUrls = async (userToken:UserToken) => {
     try {
         const isAuthourized = await isAuth(userToken.accessToken,userToken.refreshToken);
@@ -52,7 +52,7 @@ const getUrls = async (userToken:UserToken) => {
     }
 }
 
-
+/* Delete selected url */
 const deleteUrl = async (userToken:UserToken,id:string) => {
     try {
         const isAuthourized = await isAuth(userToken.accessToken,userToken.refreshToken);

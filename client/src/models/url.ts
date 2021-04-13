@@ -1,4 +1,4 @@
-/* Schema or model of User data */
+/* Schema or model of Url data */
 
 
 export default class Url{

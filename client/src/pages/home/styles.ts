@@ -1,4 +1,4 @@
-/* Styles for Profile Component/Page */
+/* Styles for Home Component/Page */
 
 import { makeStyles } from "@material-ui/core";
 
