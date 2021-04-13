@@ -1,4 +1,4 @@
-# URLshortner
+# URLshortner 
 > Web app for shrink big urls
 
 ![react][react-url]
@@ -53,7 +53,7 @@ URLshortner is a URL shortening web app, which provides short aliases for redire
    ```   
 
 
-## Features
+## Features 🚀
 
 * User Authentication
 * Material UI
@@ -66,7 +66,7 @@ URLshortner is a URL shortening web app, which provides short aliases for redire
 * 0.0.1
     * Initial Version
 
-## Meta
+## Meta 
 
 Muhsin Shah - [@shah21](https://twitter.com/MuhsinS07857838?s=09) - muhsinshah21@gmail.com
 
