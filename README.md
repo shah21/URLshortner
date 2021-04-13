@@ -1,5 +1,5 @@
 # URLshortner
-> Url shrinker like tiny url
+> Web app for shrink big urls
 
 ![react][react-url]
 ![typescript][types-url]
