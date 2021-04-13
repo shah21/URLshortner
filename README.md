@@ -21,11 +21,12 @@ URLshortner is a URL shortening web app, which provides short aliases for redire
 2. Clone the repo
 
    ```sh
-   git clone https://github.com/shah21/ProfileSite.git
+   git clone https://github.com/shah21/URLshortner.git
    ```
 3. Install NPM packages
 
    ```sh
+   cd server
    npm install
    ```
 4. Enter your API keys and Database credentials in .env 
@@ -41,6 +42,7 @@ URLshortner is a URL shortening web app, which provides short aliases for redire
 1. Install NPM packages
 
    ```sh
+   cd client
    npm install
    ```
 2. Change host ( server address ) on axios/config.ts ( if you want to run project locally )
@@ -53,18 +55,11 @@ URLshortner is a URL shortening web app, which provides short aliases for redire
 
 ## Features
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
-
-## Development setup
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
-```sh
-make install
-npm test
-```
+* User Authentication
+* Material UI
+* Add and shrink url
+* Delete Url
+.Etc
 
 ## Release History
 
@@ -77,7 +72,7 @@ Muhsin Shah - [@shah21](https://twitter.com/MuhsinS07857838?s=09) - muhsinshah21
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/shah21/Data-Bucket.git](https://github.com/shah21/Data-Bucket.git/i)
+[https://github.com/shah21/Data-Bucket.git](https://github.com/shah21/URLshortner.git/i)
 
 ## Contributing
 
