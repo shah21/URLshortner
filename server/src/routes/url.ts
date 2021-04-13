@@ -4,7 +4,7 @@ import isAuth from "../middlewares/is-auth"
 
 
 import Url from '../models/url';
-import { getUrl, getUrls, postAddUrl } from "../controllers/url";
+import { deleteUrl, getUrl, getUrls, postAddUrl } from "../controllers/url";
 
 const router = Router();
 const regex = new RegExp("((http|https)://)(www.)?"
@@ -20,5 +20,7 @@ router.post('/addUrl',[
         return true;
     }),
 ],isAuth,postAddUrl);
+
+router.delete('/delete/:id',isAuth,deleteUrl);
 
 export default router;

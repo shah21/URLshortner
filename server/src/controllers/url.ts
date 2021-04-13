@@ -2,6 +2,7 @@ import {Request,Response,NextFunction} from "express";
 import Url from "../models/url";
 import HttpException from "../utils/HttpException";
 import { validationResult } from 'express-validator';
+import { ObjectID } from "mongodb";
 
 
 /* Get url from database and redirect to original url */
@@ -63,3 +64,31 @@ export const postAddUrl = async (req:Request,res:Response,next:NextFunction)=>{
         next(err);
     }
 }
+
+
+export const deleteUrl = async (req:Request,res:Response,next:NextFunction)=>{
+    const id = req.params.id;
+
+    try{
+       
+        const query = {userId:new ObjectID(req.userId),_id:new ObjectID(id)};
+        const bucket = await Url.deleteByQuery(query);
+
+        if(!bucket){
+            const error = new HttpException('Invalid data');
+            error.statusCode = 422;
+            throw error;    
+        }
+
+        res.status(200).json({messge:'deleted successfully'});
+    }catch(err){
+        if(!err.statusCode){
+            err.statusCode = 500;
+        }
+        next(err);
+    }
+
+}
+
+
+

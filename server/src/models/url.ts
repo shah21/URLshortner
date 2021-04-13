@@ -37,5 +37,9 @@ export default class Url{
     static updateById(id:string,values:object){
         return getDb().collection('urls').findOneAndUpdate({_id:new ObjectId(id)},{$set:values},{returnOriginal:false});
     }
+
+    static deleteByQuery(query:object){
+        return getDb().collection('urls').deleteOne(query);
+    }
     
 }
