@@ -192,12 +192,12 @@ function Home() {
             color="primary"
             onClick={handleShrink}>
               Shrink
-              {isAdding && urls.length === 0  && (<CircularProgress size={20} className={classes.progress}/>)}
+              {isAdding && (<CircularProgress size={20} className={classes.progress}/>)}
             </Button>
           </div>
 
             <div className={classes.list}>
-                {isLoading && (<CircularProgress />)}
+                {isLoading && urls.length === 0 && (<CircularProgress />)}
                 {urls.length > 0 && (<CustomTable handleDelete={handleDelete} urls={urls}/>)}
             </div>
 
