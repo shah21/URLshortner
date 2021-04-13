@@ -5,14 +5,12 @@ import {ObjectId } from'mongodb';
 
 
 export default class Url{
-    _id:ObjectId;
     originalUrl:string;
     shortedUrl:string;
     createdAt:number;
     userId:ObjectId;
 
-    constructor(_id:string,originalUrl:string,shortedUrl:string,createdAt:number, userId:string){
-        this._id = new ObjectId(_id);
+    constructor(originalUrl:string,shortedUrl:string,createdAt:number, userId:string){
         this.originalUrl = originalUrl;
         this.shortedUrl = shortedUrl;
         this.createdAt = createdAt;

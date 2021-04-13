@@ -51,9 +51,9 @@ export const postAddUrl = async (req:Request,res:Response,next:NextFunction)=>{
             throw error;
         }
 
-        let randomString = require('crypto').randomBytes(12).toString('hex')
+        let randomString = require('crypto').randomBytes(7).toString('hex')
         const shrinkedUrl = `${req.protocol}://${req.get('host')}/${randomString}`
-        const newUrl = new Url(randomString,originalUrl,shrinkedUrl,Date.now(),userId);
+        const newUrl = new Url(originalUrl,shrinkedUrl,Date.now(),userId);
         await newUrl.save();
         res.status(200).json({messge:'success',url:newUrl});
     }catch(err){

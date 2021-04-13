@@ -6,3 +6,5 @@
 # dotenv environment variables file
 .env
 .env.test
+
+.deployment
