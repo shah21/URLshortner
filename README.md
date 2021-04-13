@@ -6,7 +6,7 @@
 ![node][npm-image]
 ![mongodb][mongo-url]
 
-URLshortner is a URL shortening web app, which provides short aliases for redirection of long URLs.So we can short a long url with random values and which can use to redirect to original url.This project like mini tiny url and demonstrate how we can short an url.
+URLshortner is a URL shortening web app, which provides short aliases for redirection of long URLs.So we can short a long url with random values and which can use to redirect to original url.This project like mini tiny url app and help you to understand how we can short an url.
 
  ![](./screenshots/header.png)
 
